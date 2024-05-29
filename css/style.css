@@ -1,0 +1,264 @@
+body {
+    padding: 0;margin: 0;
+    overflow-x: hidden;scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+.sidebar {
+    background-color: blue;align-content: center;
+    position: fixed;width: 50px; height: 170px;
+    margin-top: 50vh; z-index: 10;right: 0; text-align: center;
+}
+.sideclose {
+    height: 20px;
+}
+.foto {
+    width: 48px; height: 48px;
+}
+.fotoside {
+    border-top: 2px solid white;
+    height: 50px;
+}
+.logo {
+    width: 170px;height: 40px;
+    margin:20px ;
+}
+.loading {
+    width: 100%;z-index: 100; height: 100%;
+    background-color:grey; position: fixed;
+}
+.loading_style {
+    border: 16px solid white; width: 70px; height: 70px;margin: 100px auto;
+    border-top: 15px solid  darkblue;animation: spin linear 3s;border-radius: 50%;
+}
+
+.Navbar {
+    display: flex;position: fixed;top: 0; left: 0;right: 0;
+    justify-content: space-between;background: white;
+   box-shadow: 4px 5px 7px rgba(0,0,0, .2);
+    align-content: center;z-index: 9999;
+}
+ .Navbar_ul  {
+    display: flex; justify-content: space-between;
+}
+.Navbar_ul li {
+    padding: 10px; list-style: none;font-size: 17px; font-weight: bold;
+    margin-right: 13px;
+}
+.Navbar_ul li .active {
+    border-radius: 10px;padding: 10px;
+    background-color: blue;
+}
+.Navbar_ul li a {
+    text-decoration: none;
+    color: #7b68ee;
+}
+.hamburger {
+    flex-direction: column;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 6px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, .3);
+  border: 1px solid grey;
+  z-index: 20;
+    display:  none;
+}
+.line {
+    width: 25px;
+    height: 3px;background-color: gray;
+    margin-top: 2px;
+    
+    margin-bottom: 2.8px;
+}
+.label {
+    font-size: 29px; font-weight: bold;
+}
+.container {
+    
+    margin: auto;z-index: -30;
+    box-shadow: 5px 7px 10px rgba(0,0,0, .2);
+}
+
+.line {
+    animation: timeline 3s ease ;
+}
+.card {
+    display: inline;
+}
+.close {
+    display: none;
+}
+@keyframes timeline {
+   from {
+    width: 0%;
+   } to {
+    width: 100%;
+   }
+}
+.fade {
+     display: none;
+    animation-name: fade;z-index: -2000;
+    animation-duration: 1.5s;
+}
+.section2 {
+    margin-left: 50px;margin-right: 50px;
+}
+.list {
+    border-bottom: 1px solid black;
+}
+.list .list_ul {
+    display: flex;justify-content: center;
+}
+.list_ul li {
+    font-size: 25px;cursor: pointer;
+    padding: 10px;list-style: none;color: #7b68ee;
+}
+.button {
+    background-color: whitesmoke; padding: 2px;border-radius: 3px;
+    box-shadow: 4px 5px 7px rgba(0,0,0, .2);
+}
+
+.foto{
+    background-image: url("../img/everest_03.jpg.jpg");
+}
+.container_grid {
+    display: grid;text-align: center;
+    gap: 22px;margin-left: none;
+    grid-template-columns: repeat(3, 3fr);
+}
+.grid {
+    width: 170px; height: 230px; box-shadow: 2px 3px 5px rgba(0, 0, 0, .2);
+
+    border-radius: 6px;cursor: pointer;text-align: center;
+}
+.grid_foto {
+    width: 170px;background-color: darkblue;
+    height: 90px;border-bottom-right-radius: 10px;
+}
+
+.button_produk {
+    text-align:center;font-size: 14px;color: white;
+    background-color: darkblue;font-weight: bold;border: 2px solid white;
+    border-radius: 8px; height: 26px;
+    cursor: pointer;box-shadow: 3px 4px 6px rgba(0, 0, 0, .2);
+}
+.test {
+    background-image: url('../img/ranger_03.jpg.jpg');
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+th td {
+    border: 1px solid black; text-align: left;
+    padding: 5px;
+}
+.footer_ul ul{
+    display: flex; justify-content: space-around;
+}
+.logo1 {
+    width: 200px; height: 45px;
+}
+@keyframes fade {
+    from{
+        opacity: .4;
+    }to {opacity: 1;}
+}@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }50%{transform: rotate(180deg);}
+    100% {
+        transform: rotate(360deg);
+    }
+}
+footer {
+    background-color: grey;padding: 10px;color: #6a5acd ;
+   
+}
+.section-news {
+    margin: 50px;
+}
+.news {
+    width: 100%; height: 170px;
+}
+.newsgrid {
+    width: 100%; height: 170px;
+}
+.news1 {
+    margin: 10px;
+    background-color: white;border: .1px solid grey;padding: 15px;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, .2); border-radius: 10px;
+}
+.newsdisplay {
+    display: flex;
+}
+.emal {
+    border: 2px solid white;
+    height: 33px; width: 200px;border-radius: 6px;
+    background-color: grey;
+}
+.map {
+    width: 50%;
+}
+.submit {
+    width: 80px; height: 37px; border-radius: 6px;
+    background-color: darkblue; border: none;color: white;
+}
+@media(max-width:768px) {
+    .Navbar_ul {
+        display: none;
+    }
+    .Navbar_ul.open {
+        position: fixed;
+        right: 0;
+        background: white;
+       z-index: 20;
+        height: 86vh;
+        width: 45%;
+        justify-content: space-around;
+        top: 0;margin-top: 60px;
+        align-items: center;
+        animation: 2s all ease-in-out;
+     display: flex;
+     flex-direction: column;
+  }
+  
+  .hamburger {margin-right: 10px;
+    display: flex; margin-top: 21px;margin-bottom: 21px;
+  }
+  .container {
+    margin: 10px;
+  }
+  .slide img {
+    width: 100%;
+  }
+  .list .list_ul li {
+    margin-left: none;font-size: 7px;display: flex;
+    justify-content: right;
+  }
+  .container_grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -6%; 
+  }
+  footer {
+    margin: none;
+  }
+  .footer_ul ul {
+    display: block;
+    text-align: left;
+  }
+  .logo1 {
+    padding: 10px;
+  }
+  .a {
+    text-align: center; color:grey;
+  }
+  .map {
+    width: 90%;
+  }
+  .newsgrid {
+    width: 100%;
+  }
+  .newsdisplay {
+    display: block;
+  }
+}
