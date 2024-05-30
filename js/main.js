@@ -11,7 +11,7 @@ setTimeout(function () {
     const ld = document.getElementById("ld")
     loading.classList.remove("loading")
     ld.classList.remove("loading_style")
-}, 1)
+}, 2800)
 let slideIndex = 0;
 showSlides()
 function showSlides() {
