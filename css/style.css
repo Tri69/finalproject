@@ -189,6 +189,7 @@ footer {
     box-shadow: 4px 5px 7px rgba(0, 0, 0, .2); border-radius: 10px;
 }
 .newsdisplay {
+    width: 100%;
     display: flex;
 }
 .emal {
@@ -203,6 +204,32 @@ footer {
     width: 80px; height: 37px; border-radius: 6px;
     background-color: darkblue; border: none;color: white;
 }
+.labelnews {
+    font-size: 20px;font-weight: bold;
+    padding: 5px;background-color: blueviolet;
+}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .sumary {
+    border: .1px solid grey;border-radius: 10px;
+    padding: 10px;
+  }
 @media(max-width:768px) {
     .Navbar_ul {
         display: none;
@@ -259,6 +286,7 @@ footer {
     width: 100%;
   }
   .newsdisplay {
+    
     display: block;
   }
 }
